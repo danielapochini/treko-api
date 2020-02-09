@@ -12,4 +12,5 @@ VOLUME /data/db
 EXPOSE 27017 28017
 
 COPY /scripts/run.sh /root
-RUN ["chmod", "+x", "/root/run.sh" ] 
+RUN ["chmod", "+x", "/root/run.sh" ]
+CMD [ "mongod", "--bind_ip", "0.0.0.0" ]
