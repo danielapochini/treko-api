@@ -1,7 +1,7 @@
 FROM node:8-alpine
 USER root
 
-RUN apk add --no-cache mongodb
+RUN apk add mongodb
 
 VOLUME /data/db
 EXPOSE 27017 28017
